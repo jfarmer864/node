@@ -11,7 +11,6 @@ driver:
 
 provisioner:
   name: chef_zero
-
   ## product_name and product_version specifies a specific Chef product and version to install.
   ## see the Chef documentation for more details: https://docs.chef.io/config_yml_kitchen.html
   #  product_name: chef
@@ -21,8 +20,7 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-18.04
-  - name: centos-7
+  - name: ubuntu/xenial64
 
 suites:
   - name: default

@@ -18,3 +18,5 @@ chef_version '>= 14.0'
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/chef_getting_started_2'
+depends "apt"
+depends "nodejs", "~> 6.0.0"
